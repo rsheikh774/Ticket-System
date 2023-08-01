@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bus Seat Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bus-container">
+    <div class="bus">
+    <div class="seat-types">
+      <h2 class="l2">Know about your seat</h2>
+      <div class="seat-layout2">
+        <div class="seat1 available1"><span class="tt">  Available</span> </div>
+        <div class="seat2 available1"><span class="tt">  Available only for Women</span></div>
+        <div class="seat3 available1"><span class="tt">  Selected by You!</span></div>
+        <div class="seat4 available1"><span class="tt">  Booked by other</span></div>
+        <div class="seat5 available1"><span class="tt">  Booked by Female passenger</span></div>
+      </div>
+    </div>
+    </div>
+    <div class="bus">
+      <div class="deck lower-deck">
+        <h2 class="l1">Lower Deck</h2>
+        <div class="seat-layout">
+          <div class="seat available" id="s-1" data-price="200"></div>
+          <div class="seat available" id="s-2" data-price="200"></div>
+          <div class="seat available" id="s-3" data-price="200"></div>
+          <div class="seat available" id="s-4" data-price="200"></div>
+          <div class="seat available" id="s-5" data-price="200"></div>
+        </div>  
+        <div class="seat-layout1">
+          <div class="row">
+            <div class="seat available" id="s-6" data-price="250"></div>
+            <div class="seat available" id="s-7" data-price="250"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-8" data-price="250"></div>
+            <div class="seat available" id="s-9" data-price="250"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-10" data-price="250"></div>
+            <div class="seat available" id="s-11" data-price="250"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-12" data-price="250"></div>
+            <div class="seat available" id="s-13" data-price="250"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-14" data-price="250"></div>
+            <div class="seat available" id="s-15" data-price="250"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bus1">
+      <div class="deck upper-deck">
+        <h2 class="l1">Upper Deck</h2>
+        <div class="seat-layout">
+          <div class="seat available" id="s-16" data-price="180" ></div>
+          <div class="seat available" id="s-17" data-price="180"></div>
+          <div class="seat available" id="s-18" data-price="180"></div>
+          <div class="seat available" id="s-19" data-price="180"></div>
+          <div class="seat available" id="s-20" data-price="180"></div>
+        </div>  
+        <div class="seat-layout1">
+          <div class="row">
+            <div class="seat available" id="s-21" data-price="220"></div>
+            <div class="seat available" id="s-22" data-price="220"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-23" data-price="220"></div>
+            <div class="seat available" id="s-24" data-price="220"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-25" data-price="220"></div>
+            <div class="seat available" id="s-26" data-price="220"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-27" data-price="220"></div>
+            <div class="seat available" id="s-28" data-price="220"></div>
+          </div>
+          <div class="row">
+            <div class="seat available" id="s-29" data-price="220"></div>
+            <div class="seat available" id="s-30" data-price="220"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="selected-seats">
+    <div class="selected-seats-details">
+      <span id="selected-seats-count">0</span>:Total Seat 
+      <span id="selected-seats-numbers">, Seat No.</span>
+    </div>
+    <div class="total-price">
+      Total Price: <span id="total-price">0</span>
+    </div>
+    <button id="continue-button">Continue</button>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.bus1 {
+  padding-left: 10px;
+}
+
+.bus-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Enable horizontal wrapping */
+}
+
+/* Hide the "Know Your Seat" section by default */
+.seat-types {
+  display: none;
+}
+
+/* Show the "Know Your Seat" section when user scrolls to left */
+.bus-container.show-seat-types .seat-types {
+  display: block;
+}
+
+
+.deck {
+  position: relative;
+  height: 350px;
+  width: 220px;
+  border: 5px solid #ccc;
+}
+
+.l1 {
+  position: absolute;
+  text-align: center;
+  border-bottom: 5px solid #ccc;
+  width: 220px;
+}
+/* Know Your Seat */
+.l2{
+  border: 5px solid #ccc;
+  position: relative;
+  width: 237px;
+  right: 7px;
+
+}
+.seat-layout2 {
+  bottom: 10px;
+  right: 7px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  border:5px solid #ccc;
+
+}
+.tt{
+  position: absolute;
+  width: 145px;
+  left: 90px;
+  font-weight: bold;
+}
+.seat1{
+  width: 40px;
+  height: 40px;
+  border: 2px solid green;
+  background-color: #fff;
+  margin: 5px;
+}
+.seat2{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid red;
+  margin: 5px;
+}
+.seat3{
+  width: 40px;
+  height: 40px;
+  background-color: #4caf50;
+  border: 2px solid green;
+  margin: 5px;
+}
+.seat4{
+  width: 40px;
+  height: 40px;
+  
+  background-color: #ccc;
+  border: 2px solid #CCC;
+  margin: 5px;
+}
+.seat5{
+  width: 40px;
+  height: 40px;
+  border: 2px solid red;
+  background-color: #ccc;
+  margin: 5px;
+}
+/* ................................. */
+
+
+.seat-layout1 {
+  display: flex;
+  position: relative;
+  left: 28px;
+  bottom: 193px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.seat-layout {
+  display: flex;
+  position: relative;
+  top: 70px;
+  bottom: 250px;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  right: 50px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: #4caf50;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.seat:hover:after {
+  content: attr(data-price) "₹";
+  position: relative;
+  top: -30px;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.seat.women {
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.seat.available {
+  border: 2px solid green;
+  background-color: #fff;
+}
+
+.seat.available.selected {
+  background-color: green;
+}
+.seat.booked {
+  background-color: #ccc;
+  border-color:#ccc ;
+  cursor: not-allowed;
+}
+
+.seat.available.women-booked {
+  border: 2px solid red;
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.booked {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.booking-details {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.seat.women {
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+/* Rest of your existing CSS styles */
+
+.selected-seats {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  border: 2px solid #ccc;
+  width: 482px;
+  
+}
+
+.selected-seats-details {
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
+
+.total-price {
+  font-weight: bold;
+  position: relative;
+  left: 341px;
+  width: 100%;
+  bottom: 10px;
+}
+
+#continue-button {
+  padding: 10px 20px;
+  position: relative;
+  font-weight: bold;
+  width: 485px;
+  background-color: rgb(62, 43, 131);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#continue-button:hover {
+  background-color: #45a049;
+}
